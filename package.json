@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lswanderleygit/backend-omni.git",
+  "author": "Lucas Wanderley <lucaswanderley4@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
