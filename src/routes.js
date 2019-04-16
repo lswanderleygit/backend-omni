@@ -2,8 +2,9 @@ const express = require('express')
 
 const routes = express.Router()
 
-routes.get('/', (req, res) => {
-  return res.send('oi')
-})
+const BoxController = require("./controllers/BoxController")
+
+
+routes.post('/boxes', BoxController.store)
 
 module.exports = routes
