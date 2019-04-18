@@ -1,12 +1,12 @@
 const multer = require("multer")
 const path = require("path")
-const crypto = require("crypto")
+const crypto = require("crypto") //gerar hash
 
 module.exports = {
   dest: path.resolve(__dirname, '..', '..', 'tmp'),
   storage: multer.diskStorage({
     destination: (req, file, callback) => {
-      callback(null, path.resolve(__dirname, '..', '..', 'tmp'))
+      callback(null, path.resolve(__dirname, '..', '..', 'tmp')) //null para o erro
     },
     filename: (req, file, callback) => {
       crypto.randomBytes(16, (err, hash) => {

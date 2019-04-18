@@ -9,3 +9,5 @@ mongodb -> usando Atlas
 mongoose -> para abstrair o db, utilizando apenas js
 
 multer -> trabalhar com upload de arquivos
+
+crypto -> gerar hash, conjunto de caracteres unicos
