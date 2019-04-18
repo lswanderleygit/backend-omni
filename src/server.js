@@ -30,8 +30,6 @@ app.use(express.json()) //lidar com json
 app.use(express.urlencoded({ extended: true })) //permite envio de arquivos
 app.use('/files', express.static(path.resolve(__dirname, '..', 'tmp'))) // rota para acessar os arquivos que foram adicionados
 
-
-
 app.use(require('./routes'))
 
-server.listen(3333)
+server.listen(process.env.PORT || 3333)
