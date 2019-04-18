@@ -11,3 +11,5 @@ mongoose -> para abstrair o db, utilizando apenas js
 multer -> trabalhar com upload de arquivos
 
 crypto -> gerar hash, conjunto de caracteres unicos
+
+socket.io -> trabalhar com realtime
