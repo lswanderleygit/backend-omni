@@ -16,7 +16,7 @@ io.on('connection', socket => { // realtime
   })
 })
 
-mongoose.connect("mongodb+srv://lucas:asjhbf10@cluster0-jliyv.mongodb.net/omnistack?retryWrites=true", {
+mongoose.connect("mongodb+srv://lucas:senha@cluster0-jliyv.mongodb.net/omnistack?retryWrites=true", {
   useNewUrlParser: true,
 })
 
